@@ -1,4 +1,3 @@
-
 import fmcapi
 
 # ############################# User Created Variables to be used below functions ############################
