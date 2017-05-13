@@ -1,3 +1,4 @@
+
 import datetime
 import json
 import requests
@@ -9,9 +10,10 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 """
-Firepower Management Center API wrapper class for managing Firepower Threat Defense devices.
+Firepower Management Center API wrapper class for managing Firepower Threat Defense and legacy Firepower devices through a Firepower Management Center
 
 http://www.cisco.com/c/en/us/td/docs/security/firepower/610/api/REST/Firepower_REST_API_Quick_Start_Guide/Objects_in_the_REST_API.html
+ 
 """
 
 class FMC(object):
@@ -406,7 +408,7 @@ class FMC(object):
             url = "/devices/devicerecords"
             response = self.postdata(url, json_data)
             if response.get('metadata', '') is not '':
-                print("\tDevice registration can take some time (5 minutes or more).")
+                print("\t%s registration can take some time (5 minutes or more)." % device['name'])
                 print("\t\tIssue the command 'show managers' on", device['name'], "to view progress.")
 
     def modifydevice_physicalinterfaces(self, device_attributes):
