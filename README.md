@@ -1,3 +1,5 @@
+#  Defunct project.  Visit https://github.com/daxm/fmcapi for currently developed project.
+
 # Update
 These scripts work as is, but are definately in an "alpha" stage.
 
