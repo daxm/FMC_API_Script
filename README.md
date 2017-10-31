@@ -1,9 +1,6 @@
 # Update
 These scripts work as is, but are definately in an "alpha" stage.
 
-A different FMC API set of scripts, that aim to be more modular, is also being developed
-and can be found here: https://github.com/daxm/FMC_API_Wrapper.
-
 # File Summary
 The fmcapi.py file provides an FMC class will issue API actions against an FMC.
 
